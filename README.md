@@ -11,15 +11,15 @@ The PMU have following data points:
  
 _**Fig. 1:** Data points_
   <li>V RMS</li>
-  ![Data point](images/V RMS.png) <br>
+  ![Data point](images/V_RMS.png) <br>
   
 _**Fig. 2:** Data points_
   <li>V phase angle</li>
-  ![Data point](images/V ph. angle.png) <br>
+  ![Data point](images/V_ph.angle.png) <br>
   
 _**Fig. 3:** Data points_
   <li>I RMS</li>
- ![Data point](images/I RMS.png) <br>
+ ![Data point](images/I_RMS.png) <br>
  
 _**Fig. 4:** Data points_
   <li>I phase angle</li>
@@ -31,7 +31,7 @@ _**Fig. 4:** Data points_
 
 Confusion matrix
 
-![Confusion matrix](images/confusion matrix.png) <br>
+![Confusion matrix](images/confusion_matrix.png) <br>
 _**Fig. 5:** Confusion matrix_
  
 Accuracy
