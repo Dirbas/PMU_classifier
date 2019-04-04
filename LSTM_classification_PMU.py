@@ -78,22 +78,22 @@ Y = tf.placeholder(tf.float32, [None, N_CLASSES])
 pred_Y = create_LSTM_model(X)
 pred_softmax = tf.nn.softmax(pred_Y, name="y_")
 
-L2_LOSS = 0.15
+L2_LOSS = 0.0015
 
 l2 = L2_LOSS * \
     sum(tf.nn.l2_loss(tf_var) for tf_var in tf.trainable_variables())
 
 loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits = pred_Y, labels = Y)) + l2
 
-LEARNING_RATE = 0.025
+LEARNING_RATE = 0.0025
 
 optimizer = tf.train.AdamOptimizer(learning_rate=LEARNING_RATE).minimize(loss)
 
 correct_pred = tf.equal(tf.argmax(pred_softmax, 1), tf.argmax(Y, 1))
 accuracy = tf.reduce_mean(tf.cast(correct_pred, dtype=tf.float32))
 
-N_EPOCHS = 4
-BATCH_SIZE = 1024
+N_EPOCHS = 3
+BATCH_SIZE = 10240
 
 saver = tf.train.Saver()
 
